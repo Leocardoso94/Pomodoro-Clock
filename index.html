@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
-  <title>JavaScript Calculator</title>
+  <title>Pomodoro Clock</title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -13,50 +13,57 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
- <div class="container">
-  <div class="jumbotron">
-    <div class="calculadora center-block">
-      <h5 class="text-center">JavaScript Calculator</h5>
+  <div class="container">
+    <h1 class="text-center">Pomodoro Clock</h1>
+    <div class="row">
+      <div class="col-xs-4 col-xs-offset-3">
+        <p>SESSION LENGTH</p>
+      </div>
+      <div class="col-xs-3">BREAK LENGTH</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4 col-xs-offset-3">
+        <div class="input-group number-spinner">
+          <span class="input-group-btn data-dwn">
+            <button class="btn btn-default btn-info" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+          </span>
+          <input id="number" type="text" class="form-control text-center" value="1" min="1" max="25">
+          <span class="input-group-btn data-up">
+            <button class="btn btn-default btn-info" data-dir="up">
+              <span class="glyphicon glyphicon-plus"></span>
+            </button>
+          </span>
+        </div>
+      </div>
+      <div class="col-xs-3">
+        <div class="input-group number-spinner">
+          <span class="input-group-btn data-dwn">
+            <button class="btn btn-default btn-info" data-dir="dwn">
+              <span class="glyphicon glyphicon-minus"></span>
+            </button>
+          </span>
+          <input id="break" type="text" class="form-control text-center" value="1" min="1" max="59">
+          <span class="input-group-btn data-up">
+            <button class="btn btn-default btn-info" data-dir="up">
+              <span class="glyphicon glyphicon-plus"></span>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <button id="go" class="btn btn-primary center-block">Start</button>
+    </div>
+    <div class="row">
+      <h3 class="text-center" id="timer">00:00</h3>
+    </div>
 
-      <table class="center-block">
-        <tr>
-          <th class="center-block resultado" colspan="4">
-            <h4>0</h4>
-            <p></p>
-          </th>
-        </tr>
-
-        <tr>
-          <td><button class="btn btn-danger btnAC">AC</button></td>
-          <td><button class="btn btnCE btn-danger">CE</button></td>
-          <td><button class="btn btnDiv btn-primary">÷</button></td>
-          <td><button class="btn btnMult btn-primary">X</button></td>
-        </tr>
-        <tr>
-          <td><button class="btn btn7">7</button></td>
-          <td><button class="btn btn8">8</button></td>
-          <td><button class="btn btn9">9</button></td>
-          <td><button class="btn btn-primary btnSub">-</button></td>
-        </tr>
-        <tr>
-          <td><button class="btn btn4">4</button></td>
-          <td><button class="btn btn5">5</button></td>
-          <td><button class="btn btn6">6</button></td>
-          <td><button class="btn btn-primary btnSum">+</button></td>
-        </tr>
-        <tr>
-          <td><button class="btn btn1">1</button></td>
-          <td><button class="btn btn2">2</button></td>
-          <td><button class="btn btn3">3</button></td>
-          <td rowspan="2"><button class="btn btnIgual btn-success ">=</button></td>
-        </tr>
-        <tr>
-          <td colspan="2"><button class="btn btn0">0</button></td>
-          <td><button class="btn btnDot">.</button></td>
-        </tr>
-      </table>
+    <div class="row">
+      <br />
+      <section id="circle" class="center-block">
+        <section id="circle2" class=""></section>
+      </section>
     </div>
   </div>
-</div>
 </body>
 </html>

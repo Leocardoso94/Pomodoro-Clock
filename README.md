@@ -1,2 +1,2 @@
-# JavaScript Calculator
-Você pode conferir o projeto no link: https://leocardoso94.github.io/JavaScript-Calculator
+# Pomodoro Clock
+Você pode conferir o projeto no link: https://leocardoso94.github.io/Pomodoro-Clock

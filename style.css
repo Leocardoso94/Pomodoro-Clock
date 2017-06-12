@@ -1,69 +1,55 @@
-*{
-  font-family: 'Source Sans Pro', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+#go {
+  background-color: #000000;
+  border: 1px solid #fff;
+  width: 170px;
 }
-.calculadora {
-  height: 568px;
-  width: 320px;
+
+.btn-default {
+  background: transparent;
+  border: none;
+}
+
+.input-group-btn {
+  width: 0px;
+}
+
+.btn-info:hover {
   background-color: #000;
-  border-radius: 15px;
 }
 
-.resultado {
-  background-color: #fff;
-  margin-top: 20px;
-  height: 80px;
-  border-radius: 5px;
-}
-.resultado p{
-  font-size: 12px ;
-  margin-top: -5px;
-}
-.resultado h4{
-  font-size: 38px ; 
-}
-h5 {
+input#number,
+#break {
+  border: none;
+  width: 50px;
   color: #fff;
-  padding-top: 29px;
+  background: transparent;
 }
 
-button {
-  width: 60px;
-   height: 60px;
-  float: left;
-  text-align: center;
-  background-color: #fff;
-  font-size: 30px !important;
+#circle {
+  background-color: #f2ffff;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  position: relative;
+  border: 1px solid black;
 }
 
-.row {
-  margin-top: 15px;
+#circle2 {
+  background-color: #fcd000;
+  width: 0%;
+  height: 0%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border: 2px solid #6e3b12;
+}  body {
+  background-color: #333;
+  color: #fff;
+  font-family: 'Bungee', cursive;
 }
 
-table,
-tr,
-tbody{
-  display: block;
-  width: 100%;
-}
-
-td {
- float: left;
-  padding: 10px;
-}
-
-th{
-  text-align: right;
-  width: 95%;
-  padding: 5px;
-}
-
-.btn0{
-  width:140px;
-}
-.btnIgual{
-  height:140px;
-}
-
-.btn0, .btnDot{
-     margin-top: -80px;
+#timer {
+  color: #000;
 }
